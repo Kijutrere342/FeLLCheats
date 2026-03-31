@@ -1,0 +1,108 @@
+# FeLLCheats GitHub Pages Configuration
+# SEO-Optimized Jekyll Config
+
+title: "FeLLCheats — Premium Private Cheats & Hacks"
+description: "Buy premium private cheats for popular games. Aimbot, ESP, Wallhack, Spoofer and more. Undetected and safe."
+author: FeLLCheats Team
+
+# URL Configuration (будет заменено скриптом)
+url: "https://Kijutrere342.github.io"
+baseurl: "/FeLLCheats"
+
+# SEO Settings
+lang: en_US
+timezone: UTC
+
+# Jekyll Theme
+theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
+
+# Plugins for SEO
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-redirect-from
+
+# SEO Tag Settings
+twitter:
+  card: summary_large_image
+  username: fellcheats
+
+logo: /assets/logo.png
+
+# Social Links
+social:
+  name: FeLLCheats
+  links:
+    - https://fellcheats.top
+    - https://t.me/fellsupp0rt
+
+# Google Search Console (опционально)
+# google_site_verification: "YOUR_VERIFICATION_CODE"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+      image: /assets/cover.jpg
+  - scope:
+      path: "products"
+      type: "pages"
+    values:
+      layout: default
+      sitemap: true
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - LICENSE
+
+# Include in processing
+include:
+  - _pages
+  - .htaccess
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Permalink
+permalink: pretty
+
+# Collections
+collections:
+  products:
+    output: true
+    permalink: /products/:name
+
+# Analytics (опционально)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Schema.org
+webmaster_verifications:
+  google: ""
+  bing: ""
+  yandex: ""
+
+# Feed
+feed:
+  path: atom.xml
+  
+# Sitemap
+sitemap:
+  include:
+    - "**/*.md"
+    - "**/*.html"
+  exclude:
+    - "/404.html"
